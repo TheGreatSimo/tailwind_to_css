@@ -80,7 +80,7 @@ export default function App() {
 						value={result}
 						readOnly
 					></textarea>
-					<CopyToClipboard text={result} onCopy={() => toast.success('Copied!')}>
+					<CopyToClipboard text={result.trim()} onCopy={() => toast.success('Copied!')}>
 						<ClipboardCopyIcon className="w-6 h-6 mt-3 text-gray-500 cursor-pointer md:mr-1" />
 					</CopyToClipboard>
 				</div>
@@ -93,7 +93,7 @@ export default function App() {
 						value={resultJSS}
 						readOnly
 					></textarea>
-					<CopyToClipboard text={resultJSS} onCopy={() => toast.success('Copied!')}>
+					<CopyToClipboard text={resultJSS.trim()} onCopy={() => toast.success('Copied!')}>
 						<ClipboardCopyIcon className="w-6 h-6 mt-3 text-gray-500 cursor-pointer md:mr-1" />
 					</CopyToClipboard>
 				</div>
